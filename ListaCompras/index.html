@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="js/script1.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Compras</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Lista</h2></br>
+            <li id="first">Insira o Produto e o Preço nas caixas para adicionar na lista.</li>
+            <li id="second">Clique em qualquer parte do item para marca-lo como comprado.</li>
+            <li id="third">Clique nos ícones para editar e excluir.</li></br></br>
+            <p>Insera os itens desejados:</p></br>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="Nome do Produto">
+            </div>
+
+            <div class="lineInput">
+                <label>Preço</label>
+                <input type="number" id="preco" placeholder="Valor do Produto">
+            </div>
+
+            <button onclick="produto.salvar()" id="btn1">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">Item</th>
+                    <th class="center">Nome do Produto</th>
+                    <th class="center">Valor</th>
+                    <th class="center">Opções</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
